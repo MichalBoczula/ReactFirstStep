@@ -1,23 +1,11 @@
 import React from "react";
 import ReactDom from "react-dom";
+import "./index.css";
+import {BookList} from './bookList';
 
-function First()
+function App()
 {
-    return (
-        <div>
-            <Msg></Msg>
-            <Name></Name>
-        </div>);
+    return (<BookList></BookList>);
 }
 
-const Msg = function()
-{
-    return 'Hello Bro!!!'
-}
-
-const Name = function()
-{
-    return 'Majk'
-}
-
-ReactDom.render(<First></First>, document.getElementById('root'));
+ReactDom.render(<App></App>, document.getElementById('root'));
